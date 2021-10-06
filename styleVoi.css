@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.carre {
+  position: relative;
+  width: 600px;
+  height: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.carre .circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.carre .circle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #A7A5A5;
+  clip-path: circle(120px at center);
+  transition: 0.5s;
+
+}
+.carre:hover .circle:before {
+  background: #5F5D5D;
+  clip-path: circle(400px at center);
+  }
+
+.carre img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  pointer-events: none;
+  transition: 0.5s;
+  }
+
+.carre:hover img {
+  left:82%;
+  height: 340px;
+}
+
+.carre .content{
+  position: relative;
+  width: 50%;
+  left: 20%;
+  padding: 20px 20px 20px 40px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.carre:hover .content{
+left:  0;
+opacity: 1;
+visibility: visible;
+}
+
+.carre .content h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+  margin-bottom: 5px;
+}
+
+.carre .content p {
+  color: #fff;
+  position:relative;
+}
+
+.carre .content a {
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px 20px;
+  background: #fff;
+  color: #111;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+@media (max-width: 991px) {
+   .carre {
+     width: auto;
+     max-width: 350px;
+     align-items: flex-start;
+   }
+   .carre:hover {
+     height: 600px;
+   }
+   .carre .content {
+     width: 100%;
+     left: 0;
+     padding: 40%;
+   }
+   .carre:hover img {
+     top: 70%;
+     left: 50%;
+     height: 300px;
+   }
+}
+@media (max-width: 991px){
+  .carre .content {
+    padding: 20px;
+  }
+}
