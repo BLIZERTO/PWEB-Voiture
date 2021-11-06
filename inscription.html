@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kaushan+Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navor" id="mainNav">
+    <div class="container"><a class="navbar-brand" href="#page-top">J'y-Loue</a><button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse" aria-controls="navbarResponsive" aria-expanded="false"
+                                                                                        aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="nav navbar-nav ml-auto text-uppercase">
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="acceuil.html">Accueil</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="">Services</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="nosvoiture.html">Nos voitures</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="inscription.html">Inscription</a></li>
+                <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="seConnecter.html">Connexion</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1 class="centro">Formulaire d'inscription</h1>
+<form action="inscription.php" method="POST">
+    <div class="container">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Nom</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Polado">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Prénom</label>
+        <input type="name" class="form-control" id="exampleFormControlInput2" placeholder="Didier">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Pseudo</label>
+        <input type="name" class="form-control" id="exampleFormControlInput3" placeholder="El_Bourito">
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="poladoDidi@gmail.com">
+    </div>
+
+    <div class="form-group">
+        <label for="inputPassword" class=" col-form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+    </div>
+        <div class="botono"><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" role="button" type="submit" formaction="seConnecter.php" href="#">S'inscrire</a></div>
+    </div>
+</form>
+<div><?php echo $msg ?></div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"><span class="copyright">Copyright&nbsp;© Brand 2021</span></div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
